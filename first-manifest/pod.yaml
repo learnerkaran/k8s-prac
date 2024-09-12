@@ -8,3 +8,5 @@ spec:
         image: learnerkaran/counter:latest
         ports:
           - containerPort: 80
+            name: http
+            protocol: TCP
