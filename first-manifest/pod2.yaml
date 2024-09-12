@@ -3,7 +3,7 @@ kind: Pod
 metadata:
     name: studentapp-pod
     labels: 
-     - app: studentapp-pod
+      app: studentapp-pod
 spec:
   containers:
     - image: learnerkaran/frontendstud:latest
