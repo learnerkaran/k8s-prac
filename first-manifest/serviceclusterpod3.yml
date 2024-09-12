@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata: 
+    name: clusteripemployee
+    labels:
+      app: clusteripemployee
+spec: 
+    selector: 
+      app: employeeapp-pod
+    type: ClusterIP
+    ports: 
+      port: 3000
+      targetPort: 3000
