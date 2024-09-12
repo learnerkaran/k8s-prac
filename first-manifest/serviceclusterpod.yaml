@@ -3,7 +3,7 @@ kind: Service
 metadata: 
   name: clusteripcounter
   labels: 
-    - app: clusteripcounter
+     app: clusteripcounter
 spec:
   selector: 
     app: counter-pod
