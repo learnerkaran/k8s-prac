@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata: 
+    name: lbemployee
+    labels:
+      app: lbemployee
+spec:
+    selector: 
+      app: employeeapp-pod
+    type: LoadBalancer
+    ports: 
+      - port: 3000
+        targetPort: 3000
