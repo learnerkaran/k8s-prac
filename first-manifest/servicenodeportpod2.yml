@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: nodeportstudapp
+    labels: 
+      app: nodeportstudapp
+spec:
+    selector:
+      app: studentapp-pod
+    type: NodePort
+    ports:
+      port: 8080
+      targetPort: 8080
