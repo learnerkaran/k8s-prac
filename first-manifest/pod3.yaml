@@ -8,5 +8,5 @@ spec:
   containers:
     - image: learnerkaran/employeefront:latest
       name: employeeapp-cont
-      port:
+      ports:
        - containerPort: 3000
