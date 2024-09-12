@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metdata: 
+    name: lbstudapp
+    labels:
+      app: lbstudapp
+spec:
+    selector: 
+      app: studentapp-pod
+    type: LoadBalancer
+    ports: 
+      - port: 8080
+        targetPort: 8080
