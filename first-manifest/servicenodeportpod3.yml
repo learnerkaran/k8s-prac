@@ -6,7 +6,7 @@ metadata:
       app: nodeportemployee
 spec: 
     selector: 
-        app: employeeapp-cont
+        app: employeeapp-pod
     type: NodePort
     ports:
       - port: 3000
