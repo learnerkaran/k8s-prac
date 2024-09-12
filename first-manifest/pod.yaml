@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: counter-pod
+  namespace: namecounterdevenv
   labels: 
     app: counter-pod
 spec: 

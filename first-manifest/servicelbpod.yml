@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
     name: loadbalancercounter
+    namespace: namecounterdevenv
     labels: 
       app: loadbalancercounter
 spec:
