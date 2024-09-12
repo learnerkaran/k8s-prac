@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: counter-pod
-  labels: counter-pod:wq
+  labels: counter-pod
 spec: 
     containers:
       - name: conunter-cont
