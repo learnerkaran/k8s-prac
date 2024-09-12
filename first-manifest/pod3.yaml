@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: employeeapp-pod
+  labels: 
+    app: employeeapp-pod
+spec: 
+  containers:
+    - image: learnerkaran/employeefront:latest
+      name: employeeapp-cont
+      port:
+       - containerPort: 3000
