@@ -9,5 +9,5 @@ spec:
     app: counter-pod
   type: ClusterIP
   ports:
-    - ports: 80
+    - port: 80
       targetPort: 80
