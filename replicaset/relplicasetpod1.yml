@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+      name: pod1replica
+      labels: 
+        app: pod1replica
+spec: 
+    replicas: 3
+    template: 
+      metadata:
+        #namespace: namecounterdevenv
+        labels: 
+          app: pod1replica
+      spec: 
+          containers:
+            - name: counterpod-cont
+              image: learnerkaran/counter:latest
+              resources:
+                  requests:
+                      cpu: "50m"
+                      memory: "90Mi"
+              ports: 
+                - name: http
+                  port: 80
+                  protocol: TCP
+    selector: 
+        matchExpressions: 
+          - {key: app, operator: In, values: [pod1replica]}
+          #- {key: app, operator: In, values: [webappreplica, mobappreplica]}
